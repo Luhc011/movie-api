@@ -6,8 +6,6 @@ const usersRoutes = Router();
 
 const usersController =  new UsersController(); // new instance of Controller
 
-
-// root routes
-usersRoutes.post('/', usersController.create)
+usersRoutes.post('/', usersController.create) 
 
 module.exports = usersRoutes
