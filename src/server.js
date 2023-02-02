@@ -1,11 +1,11 @@
-const express = require('express');
-const routes = require('./routes');
+const express = require('express'); //import express
+const routes = require('./routes'); //import routes
+
 const app = express();
 
-app.use(routes)
-
-
+//middleware use
 app.use(express.json());
+app.use(routes)
 
 const PORT = 3333;
 
